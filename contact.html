@@ -11,28 +11,49 @@
   <!-- Header with Navbar -->
   <header>
     <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">MyBlog</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">PointofVU</a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Hamburger for Mobile Navigation -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
-  </header>
+</header>
+  
 
   <!-- Main Content -->
   <main>
     <section class="contact">
       <h1>Contact Us</h1>
-      <form action="#" method="post">
+
+      <form action="https://submit-form.com/W1f3oXgAX" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required />
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      
+
+      <!-- <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
 
@@ -42,15 +63,38 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+        <button type="submit" class="btn">Send Message</button> -->
+      <!-- </form> -->
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Beautiful Blog. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="index.html">PointofVU</a>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 PointofVU Blog. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+  
 
   <script src="js/script.js"></script>
 </body>

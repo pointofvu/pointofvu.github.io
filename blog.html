@@ -11,54 +11,73 @@
   <!-- Header with Navbar -->
   <header>
     <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">MyBlog</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">PointofVU</a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Hamburger for Mobile Navigation -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
-  </header>
+</header>
+  
+<main>
+  <section class="blog-posts">
+    <article class="post">
+      <span class="tag love">LOVE</span>
+      <h2>Unconditional Love : Right Or Wrong ?</h2>
+      <p class="post-meta">
+        By <strong>Shy Writer</strong> | 
+        <time datetime="2025-02-01">Feb 1, 2025</time>
+      </p>
+      <p>
+        Unconditional love, by its very definition, is love that exists without any expectations or conditions. It’s a pure form of love that transcends material or emotional needs. However, in real life, love is rarely unconditional.
+      </p>
+      <a href="./posts/post1.html" class="btn">Read More</a>
+    </article>
 
-  <!-- Main Content -->
-  <main>
-    <section class="blog-posts">
-      <article class="post">
-        <header>
-          <h2>Blog Post Title 1</h2>
-          <p class="post-meta">Posted on <time datetime="2025-02-01">February 1, 2025</time></p>
-        </header>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-        <a href="post1.html" class="btn">Read More</a>
-      </article>
-      <article class="post">
-        <header>
-          <h2>Blog Post Title 2</h2>
-          <p class="post-meta">Posted on <time datetime="2025-01-15">January 15, 2025</time></p>
-        </header>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-        <a href="post2.html" class="btn">Read More</a>
-      </article>
-      <!-- Add more posts as needed -->
-    </section>
-  </main>
+   
+  </section>
+</main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Beautiful Blog. All rights reserved.</p>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="index.html">PointofVU</a>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 PointofVU Blog. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+  
 
   <script src="js/script.js"></script>
 </body>
