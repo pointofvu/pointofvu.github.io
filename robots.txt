@@ -1,0 +1,13 @@
+User-agent: *
+# Allow crawling of all pages and assets by default
+Allow: /
+
+# Block access to private directories (adjust as needed)
+Disallow: /admin/
+Disallow: /private/
+
+# Uncomment the line below if you want to block crawlers from accessing your assets folder (images, etc.)
+# Disallow: /assets/
+
+# Sitemap location
+Sitemap: https://pointofvu.github.io/sitemap.xml

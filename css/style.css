@@ -135,10 +135,11 @@ body {
 
 /* Styling for Text Elements */
 .hero-overlay h1 {
-  font-size: 5rem;
-  margin-top: 2rem;
-  margin-bottom: 10rem;
-  -webkit-text-stroke: 1px rgb(119, 119, 119);
+  font-size: 1.6rem;
+  margin-top: 15rem;
+  margin-left: -1rem;
+  margin-bottom: 1rem;
+  -webkit-text-stroke: 0.05rem rgb(1, 5, 33);
  
 }
 
