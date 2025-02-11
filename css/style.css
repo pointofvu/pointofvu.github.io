@@ -93,41 +93,77 @@ body {
 /* ------------------------- */
 /* ----- Hero Section ----- */
 /* ------------------------- */
+/* Hero Section */
 .hero {
-  background: url('../images/hero.jpg') center/cover no-repeat;
-  background-color: black;
-  color: #fff;
-  height: 80vh;
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Full viewport height */
+  padding: 2rem;
+  overflow: hidden;
+}
+
+/* Fullscreen Video */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100% !important;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Overlay Content */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 0 20px; /* Optional padding for smaller screens */
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45); /* Optional semi-transparent overlay for better text readability */
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+/* Styling for Text Elements */
+.hero-overlay h1 {
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  -webkit-text-stroke: 1px rgb(119, 119, 119);
+ 
 }
 
-.hero p {
-  font-size: 24px;
-  margin-bottom: 20px;
+.hero-overlay p {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  -webkit-text-stroke: 1px rgb(119, 119, 119);
 }
 
+/* Button Styling */
 .btn {
   background: #007BFF;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 24px;
   text-decoration: none;
   border-radius: 5px;
+  font-size: 1rem;
   transition: background 0.3s;
 }
 
 .btn:hover {
   background: #0056b3;
 }
+
 
 /* ------------------------- */
 /* ----- Features Section ----- */
