@@ -166,6 +166,129 @@ body {
 }
 
 
+/* Latest Blogs Section */
+.latest-blogs {
+  padding: 40px 20px;
+  background: #fff;
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.latest-blogs h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Carousel Container - fixed width to show exactly 3 posts */
+.carousel-container {
+  position: relative;
+  width: 940px;  /* 3 items: (300px * 3) + (20px * 2) */
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+
+/* Carousel - Horizontal Scroll with Smooth Behavior */
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding: 0;  /* Remove extra padding since container width is fixed */
+}
+
+/* Hide scrollbar (Webkit only) */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Carousel Item (Each Blog Post Card) */
+.carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background: #f9f9f9;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.carousel-item .meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.carousel-item .excerpt {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Carousel Navigation Arrows */
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  /* margin-left: -20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .latest-blogs h2 {
+    font-size: 1.8rem;
+  }
+  /* Adjust container width on smaller screens */
+  .carousel-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .carousel {
+    padding: 0;
+  }
+  .carousel-item {
+    width: 250px;
+    padding: 15px;
+  }
+}
+
+
 /* ------------------------- */
 /* ----- Features Section ----- */
 /* ------------------------- */
@@ -471,8 +594,18 @@ body {
   }
 
   /* Hero Section adjustments */
+  .hero{
+    /* height: 40vh; */
+    background-color: black;
+  }
+
+  .hero-video{
+    height: 100vh;
+  }
   .hero h1 {
-    font-size: 36px;
+    font-size: 15px;
+    margin-bottom: 4rem;
+    -webkit-text-stroke: 0px transparent;
   }
   .hero p {
     font-size: 18px;
